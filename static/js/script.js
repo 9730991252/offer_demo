@@ -5,15 +5,15 @@ const text = document.getElementById("text");
 /* --------------- Minimum And Maximum Angle For A value  --------------------- */
 const spinValues = [
   { minDegree: 61, maxDegree: 90, value: 10 },
-  { minDegree: 31, maxDegree: 60, value: 10 },
+  { minDegree: 31, maxDegree: 60, value: 9 },
   { minDegree: 0, maxDegree: 30, value: 10 },
-  { minDegree: 331, maxDegree: 360, value: 10 },
+  { minDegree: 331, maxDegree: 360, value: 5 },
   { minDegree: 301, maxDegree: 330, value: 20 },
   { minDegree: 271, maxDegree: 300, value: 0 },
   { minDegree: 241, maxDegree: 270, value: 10 },
-  { minDegree: 211, maxDegree: 240, value: 10 },
+  { minDegree: 211, maxDegree: 240, value: 8 },
   { minDegree: 181, maxDegree: 210, value: 10 },
-  { minDegree: 151, maxDegree: 180, value: 10 },
+  { minDegree: 151, maxDegree: 180, value: 7 },
   { minDegree: 121, maxDegree: 150, value: 0 },
   { minDegree: 91, maxDegree: 120, value: 50 },
 ];
@@ -40,7 +40,7 @@ let spinChart = new Chart(spinWheel, {
   plugins: [ChartDataLabels],
   type: "pie",
   data: {
-    labels: [10, 10, 10, 10, 20, 0, 10, 10, 10, 10, 0, 50],
+    labels: [10, 9, 10, 5, 20, 0, 10, 8, 10, 7, 0, 50],
     datasets: [
       {
         backgroundColor: spinColors,
