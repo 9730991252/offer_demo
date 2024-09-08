@@ -80,11 +80,11 @@ After=network.target
 User=root
 Group=root
 WorkingDirectory=/root/offer_demo
-ExecStart=/root/dt/venv/bin/gunicorn \
+ExecStart=/root/offer_demo/venv/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
           --bind unix:/run/offer_demo.com.gunicorn.sock \
-          dt.wsgi:application
+          offer_demo.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
@@ -145,9 +145,7 @@ server{
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
         proxy_pass http://unix:/run/offer_demo.com.gunicorn.sock;
-    }
-
-    
+    }    
 }
 
 -----------------------------------------------------
