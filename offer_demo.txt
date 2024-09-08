@@ -10,7 +10,7 @@ exit
 _______________________________________
 
 
-git clone https://github.com/9730991252/dt.git
+git clone https://github.com/9730991252/offer_demo.git
 
 _______________________________________
 ********** Create Virtual env *****
