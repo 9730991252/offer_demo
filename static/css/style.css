@@ -105,6 +105,11 @@ body {
 
 
 
+@media only screen and (max-width: 450px) {
+  #spin_btn {
+    font-size: 1rem;
 
+  }
+}
 
 
